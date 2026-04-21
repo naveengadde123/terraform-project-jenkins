@@ -7,12 +7,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/naveengadde123/terraform-project-jenkins.git'
-            }
-        }
-
         stage('Terraform Init') {
             steps {
                 sh 'terraform init'
